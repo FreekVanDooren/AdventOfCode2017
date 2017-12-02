@@ -1,9 +1,5 @@
 package day1
 
-class InverseCaptcha {
-
-}
-
 object InverseCaptcha {
 
   def sumHalf(input: String) = {
@@ -20,10 +16,10 @@ object InverseCaptcha {
 
   def sum(input: String): Int = {
     sum((input + input.charAt(0)).toList
-      .sliding(2).toList)
+      .sliding(2))
   }
 
-  private def sum(input:List[List[Char]]) = {
+  private def sum(input:TraversableOnce[List[Char]]) = {
     input
       .map {
         case List(a, b) if a == b => a

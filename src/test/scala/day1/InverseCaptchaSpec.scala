@@ -19,9 +19,7 @@ class InverseCaptchaSpec extends FunSuite {
     assert(InverseCaptcha.sum("91212129") == 9)
   }
   test("Actual 1") {
-    assert(InverseCaptcha.sum(ACTUAL)
-      == 1034
-    )
+    assert(InverseCaptcha.sum(ACTUAL) == 1034)
   }
 
   test("Example 2.1") {
@@ -40,9 +38,7 @@ class InverseCaptchaSpec extends FunSuite {
     assert(InverseCaptcha.sumHalf("12131415") == 4)
   }
   test("Actual 2") {
-    assert(InverseCaptcha.sumHalf(ACTUAL)
-      == 1034
-    )
+    assert(InverseCaptcha.sumHalf(ACTUAL) == 1356)
   }
 
 
