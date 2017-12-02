@@ -1,8 +1,6 @@
-package day1
+object Day1 {
 
-object InverseCaptcha {
-
-  def sumHalf(input: String) = {
+  def inverseCaptchaHalf(input: String) = {
     val characters = input.toList
     val nrOfCharaters = characters.size
     val halfWay = nrOfCharaters/2
@@ -14,7 +12,7 @@ object InverseCaptcha {
       })
   }
 
-  def sum(input: String): Int = {
+  def inverseCaptcha(input: String): Int = {
     sum((input + input.charAt(0)).toList
       .sliding(2))
   }
