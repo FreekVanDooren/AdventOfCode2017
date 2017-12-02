@@ -17,7 +17,7 @@ class Day2Spec extends FunSuite {
   }
 
   test("Actual Division") {
-    assert(Day2.division(getSource("day2/actual.txt")) == 30994)
+    assert(Day2.division(getSource("day2/actual.txt")) == 233)
   }
 
   private def getSource(fileName: String) = {
