@@ -1,6 +1,5 @@
+import FileReader.getSource
 import org.scalatest.FunSuite
-
-import scala.io.Source
 
 class Day2Spec extends FunSuite {
 
@@ -18,9 +17,5 @@ class Day2Spec extends FunSuite {
 
   test("Actual Division") {
     assert(Day2.division(getSource("day2/actual.txt")) == 233)
-  }
-
-  private def getSource(fileName: String) = {
-    Source.fromInputStream(getClass.getResourceAsStream(fileName))
   }
 }
